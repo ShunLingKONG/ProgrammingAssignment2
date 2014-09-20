@@ -1,5 +1,6 @@
-## ****makeCacheMatrix: This function creates a speical"matrix" that can cahce its inverse****
-
+## ****makeCacheMatrix: This function creates a speical"matrix" that can cache its inverse****
+## **<<-operator can be used to assign a value to an object in an environment that is different from the current environment**
+##**The first function amake Vector creates a special "vector", which is really a list containing a funtion to:1.set the value of the vector;2.get the value of the vector;set the value of the inverse;get the value of the inverse
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
         set <- function(y) {
@@ -15,8 +16,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-##*****CacheSolve computes the inverse of the special "matrix". If the inverse has already been calculated and the matrix has not changed, then the cachesolve should retrieve the inverse from the cache
-##****Assume taht the matrix supplied is always invertible.
+##***** CacheSolve computes the inverse of the special "matrix". If the inverse has already been calculated and the matrix has not changed, then the cachesolve should retrieve the inverse from the cache
+##****Assume that the matrix supplied is always invertible.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
