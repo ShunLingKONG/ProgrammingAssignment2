@@ -1,6 +1,6 @@
-## ****makeCacheMatrix: This function creates a speical"matrix" that can cache its inverse****
+## ****makeCacheMatrix: This function creates a special"matrix" that can cache its inverse****
 ## **<<-operator can be used to assign a value to an object in an environment that is different from the current environment**
-##**The first function amake Vector creates a special "vector", which is really a list containing a funtion to:1.set the value of the vector;2.get the value of the vector;set the value of the inverse;get the value of the inverse
+##**The first function,make Vector creates a special "vector", which is really a list containing a funtion to:1.set the value of the vector;2.get the value of the vector;3.set the value of the inverse;4.get the value of the inverse
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
         set <- function(y) {
